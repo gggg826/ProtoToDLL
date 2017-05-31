@@ -15,7 +15,7 @@ namespace ProtoConvert
 		private static string GetDLLName()
 		{
 			string dllName = string.Empty;
-			if (Directory.Exists(ConfigPath))
+			if (File.Exists(ConfigPath))
 			{
 				StreamReader sr = new StreamReader(ConfigPath);
 				string str = sr.ReadToEnd().Trim();
