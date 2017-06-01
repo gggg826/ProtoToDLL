@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace ProtoConvert
 {
@@ -12,6 +13,9 @@ namespace ProtoConvert
 		private static string DLLPath = string.Format("{0}..\\..\\DLLFiles", AppRootPath);
 		private static string ConfigPath = string.Format("{0}..\\..\\Config.txt", AppRootPath);
 
+        /// <summary>
+        /// 没必要用Json做配置
+        /// </summary>
 		private static string GetDLLName()
 		{
 			string dllName = string.Empty;
